@@ -3,10 +3,10 @@ package com.sena.carnetSena.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.sena.carnetSena.models.Usuario;
+import com.sena.carnetSena.models.Rol;
 
 @Repository
-public interface repositoryUsuario extends JpaRepository<Usuario, Long>{
+public interface RolRepository extends JpaRepository<Rol, Long>{
 
 }
 
