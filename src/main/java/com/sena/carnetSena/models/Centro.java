@@ -1,6 +1,5 @@
 package com.sena.carnetSena.models;
 
-import org.hibernate.annotations.ManyToAny;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;

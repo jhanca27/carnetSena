@@ -23,10 +23,10 @@ public class Usuario {
 	private String documentUsuario;
 	@ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	private Rol rol;
-/*
+
 	@ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	private Centro centro;
-*/
+
 	@Column(name = "foto usuario")
 	private String fotoUsuario;
 
@@ -34,16 +34,15 @@ public class Usuario {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Usuario(long idUsuario, String nombreUsuario, String documentUsuario, Rol rol, /*Centro centro,*/
+	public Usuario(long idUsuario, String nombreUsuario, String documentUsuario, Rol rol, Centro centro,
 			String fotoUsuario) {
 		super();
 		this.idUsuario = idUsuario;
 		this.nombreUsuario = nombreUsuario;
 		this.documentUsuario = documentUsuario;
 		this.rol = rol;
-		/*
 		this.centro = centro;
-		*/
+		
 		this.fotoUsuario = fotoUsuario;
 	}
 
@@ -78,7 +77,7 @@ public class Usuario {
 	public void setRol(Rol rol) {
 		this.rol = rol;
 	}
-/*
+
 	public Centro getCentro() {
 		return centro;
 	}
@@ -86,7 +85,7 @@ public class Usuario {
 	public void setCentro(Centro centro) {
 		this.centro = centro;
 	}
-*/
+	
 	public String getFotoUsuario() {
 		return fotoUsuario;
 	}
