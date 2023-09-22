@@ -9,3 +9,4 @@ import com.sena.carnetSena.models.Rol;
 public interface repositoryRol extends JpaRepository<Rol, Long>{
 
 }
+

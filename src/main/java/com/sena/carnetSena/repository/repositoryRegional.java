@@ -9,3 +9,4 @@ import com.sena.carnetSena.models.Regional;
 public interface repositoryRegional extends JpaRepository<Regional, Long>{
 
 }
+

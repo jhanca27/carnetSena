@@ -9,3 +9,4 @@ import com.sena.carnetSena.models.Usuario;
 public interface repositoryUsuario extends JpaRepository<Usuario, Long>{
 
 }
+

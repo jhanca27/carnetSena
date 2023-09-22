@@ -23,8 +23,10 @@ public class Usuario {
 	private String documentUsuario;
 	@ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	private Rol rol;
+
 	@ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	private Centro centro;
+
 	@Column(name = "foto usuario")
 	private String fotoUsuario;
 
@@ -40,6 +42,7 @@ public class Usuario {
 		this.documentUsuario = documentUsuario;
 		this.rol = rol;
 		this.centro = centro;
+		
 		this.fotoUsuario = fotoUsuario;
 	}
 
@@ -82,7 +85,7 @@ public class Usuario {
 	public void setCentro(Centro centro) {
 		this.centro = centro;
 	}
-
+	
 	public String getFotoUsuario() {
 		return fotoUsuario;
 	}
